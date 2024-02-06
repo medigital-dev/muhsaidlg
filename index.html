@@ -107,14 +107,24 @@
     a:hover {
       color: limegreen;
     }
+
+    #particles-js {
+      z-index: -1 !important;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 
 <body class="d-flex h-100 text-center text-bg-dark">
+  <div id="particles-js"></div>
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-4">
       <div>
-        <h3 class="float-md-start mb-0 fs-5">muhsaidlg.my.id</h3>
+        <a href="./" class="float-md-start mb-0 fs-5" style="font-family: 'Courier New', Courier, monospace;">
+          muhsaidlg.my.id
+        </a>
         <ul class="nav nav-masthead justify-content-center float-md-end" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link px-2 active" data-bs-toggle="tab" data-bs-target="#home" type="button"
@@ -122,15 +132,15 @@
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link px-2" data-bs-toggle="tab" data-bs-target="#about" type="button"
-              role="tab">About</button>
+              role="tab">Tentang</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link px-2" data-bs-toggle="tab" data-bs-target="#project" type="button"
-              role="tab">Project</button>
+              role="tab">Proyek</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link px-2" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-              role="tab">Contact</button>
+              role="tab">Kontak</button>
           </li>
         </ul>
       </div>
@@ -140,16 +150,16 @@
       <div class="tab-content mb-3">
         <div role="tabpanel" id="home" class="tab-pane fade show active" tabindex="0">
           <img src="icon.png" alt="Logo MeDigital" width="180">
-          <h2>Muhammad Said Latif Ghofari</h2>
-          <p class="lead mb-3">Web Developer | Network Engineer | IT Support</p>
+          <h2 class="mb-0">Muhammad Said Latif Ghofari</h2>
+          <p class="lead fs-6 mb-3">Web Developer | Network Engineer | IT Support</p>
 
           <div class="container" id="featured-3">
-            <h5 class="mb-4">Our Project</h5>
+            <h5 class="mb-4 text-decoration-underline">Proyek kami:</h5>
             <div class="row g-4 mb-5 row-cols-2 row-cols-lg-4">
               <div class="feature col">
                 <div
                   class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
-                  <i class="bi bi-asterisk"></i>
+                  <i class="bi bi-star-fill"></i>
                 </div>
                 <h3 class="fs-4">Simpel</h3>
               </div>
@@ -165,7 +175,7 @@
                   class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
                   <i class="bi bi-columns-gap"></i>
                 </div>
-                <h3 class="fs-4">Desain Rapi</h3>
+                <h3 class="fs-4">Rapi</h3>
               </div>
               <div class="feature col">
                 <div
@@ -178,7 +188,7 @@
           </div>
         </div>
         <div class="tab-pane fade" id="about" role="tabpanel">
-          <h2 class="mb-4">About Me</h2>
+          <h2 class="mb-4">Tentang Saya</h2>
           <div class="row mb-4">
             <div class="col">
               <img src="images/profil/me.jpg" alt="ME" width="180"
@@ -192,7 +202,7 @@
             adalah hobiku.
             <i class="bi bi-quote"></i>
           </blockquote>
-          <h3 class="mb-3">Skills</h3>
+          <h3 class="mb-3">Skil</h3>
           <div class="list-group list-group-horizontal-lg">
             <a href="//codeigniter.com" class="list-group-item list-group-item-action text-bg-dark border-0"
               target="_blank"><i class="bi bi-check-circle-fill me-1"></i>
@@ -206,7 +216,7 @@
           </div>
         </div>
         <div class="tab-pane fade" role="tabpanel" id="project">
-          <h2 class="mb-4">Project</h2>
+          <h2 class="mb-4">Proyek Kami</h2>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card border-3 rounded-3 border-success h-100">
@@ -253,19 +263,19 @@
           </div>
         </div>
         <div class="tab-pane fade" role="tabpanel" id="contact">
-          <h2 class="mb-4 pt-5">Contact Us</h2>
+          <h2 class="mb-4 pt-5">Kontak</h2>
           <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
             <div class="col d-flex align-items-start text-start">
               <i class="bi bi-geo-alt-fill fs-3"></i>
               <div class="ps-3">
-                <h3 class="fw-bold mb-0 fs-4">Address</h3>
+                <h3 class="fw-bold mb-0 fs-4">Alamat</h3>
                 <p>Wonosari, Gunungkidul, DI Yogyakarta</p>
               </div>
             </div>
             <div class="col d-flex align-items-start text-start">
               <i class="bi bi-telephone-fill fs-3"></i>
               <div class="ps-3">
-                <h3 class="fw-bold mb-0 fs-4">Phone</h3>
+                <h3 class="fw-bold mb-0 fs-4">Telepon</h3>
                 <a href="tel:+6287839301572" target="_blank">087839301572</a>
               </div>
             </div>
@@ -277,7 +287,7 @@
               </div>
             </div>
           </div>
-          <h3 class="mb-4">Social Media</h3>
+          <h3 class="mb-4">Temukan saya di</h3>
           <ul class="nav justify-content-center list-unstyled d-flex">
             <li class="mx-2">
               <a class="text-white fs-3" href="https://wa.me/qr/GTLC4QOMSPBYG1" target="_blank">
@@ -309,10 +319,120 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   <script>
-    Fancybox.bind("[data-fancybox]", {
-      // Your custom options
+    Fancybox.bind('[data-fancybox]');
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 20,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ABEBC6"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 20,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.22,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true,
     });
+
   </script>
 </body>
 
