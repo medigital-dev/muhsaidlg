@@ -12,38 +12,20 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel="shortcut icon" href="icon.png" type="image/x-icon">
   <style>
-    /*
- * Globals
- */
+    body {
+      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    }
 
-
-    /* Custom default button */
     .btn-light,
     .btn-light:hover,
     .btn-light:focus {
       color: #333;
       text-shadow: none;
-      /* Prevent inheritance from `body` */
-    }
-
-
-    /*
- * Base structure
- */
-
-    body {
-      text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-      /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
     }
 
     .cover-container {
       max-width: 42em;
     }
-
-
-    /*
- * Header
- */
 
     .nav-masthead .nav-link {
       color: rgba(255, 255, 255, .5);
@@ -109,10 +91,10 @@
     }
 
     #particles-js {
-      z-index: -1 !important;
+      z-index: -1;
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: 99%;
     }
   </style>
 </head>
@@ -122,7 +104,7 @@
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-4">
       <div>
-        <a href="./" class="float-md-start mb-0 fs-5" style="font-family: 'Courier New', Courier, monospace;">
+        <a href="./" class="float-md-start mb-0 fs-5">
           muhsaidlg.my.id
         </a>
         <ul class="nav nav-masthead justify-content-center float-md-end" id="myTab" role="tablist">
@@ -149,12 +131,11 @@
     <main class="px-3">
       <div class="tab-content mb-3">
         <div role="tabpanel" id="home" class="tab-pane fade show active" tabindex="0">
-          <img src="icon.png" alt="Logo MeDigital" width="180">
-          <h2 class="mb-0">Muhammad Said Latif Ghofari</h2>
-          <p class="lead fs-6 mb-3">Web Developer | Network Engineer | IT Support</p>
+          <img src="icon.png" alt="Logo MeDigital" width="180" class="mb-2">
+          <h2 class="mb-1 fs-1">meDigital Developer</h2>
+          <p class="lead fs-6 mb-5">Web Developer | Network Engineer | IT Support</p>
 
           <div class="container" id="featured-3">
-            <h5 class="mb-4 text-decoration-underline">Proyek kami:</h5>
             <div class="row g-4 mb-5 row-cols-2 row-cols-lg-4">
               <div class="feature col">
                 <div
@@ -195,24 +176,27 @@
                 class="shadow rounded-circle border border-3 border-white">
             </div>
           </div>
+          <h2 class="mb-2">Muhammad Said Latif Ghofari</h2>
           <blockquote class="blockquote fs-5 mb-4">
             <i class="bi bi-quote"></i>
-            Hae... Saya Said, sangat menyukai proses mengembangkan aplikasi web. Menemukan algoritma untuk memecahkan
-            masalah
-            adalah hobiku.
+            Hae... Saya Said, ngoding adalah hobiku, menyukai tantangan dalam menemukan algoritma untuk memecahkan
+            masalah anda.
             <i class="bi bi-quote"></i>
           </blockquote>
-          <h3 class="mb-3">Skil</h3>
-          <div class="list-group list-group-horizontal-lg">
-            <a href="//codeigniter.com" class="list-group-item list-group-item-action text-bg-dark border-0"
-              target="_blank"><i class="bi bi-check-circle-fill me-1"></i>
+          <h3 class="mb-3">Skils</h3>
+          <div class="list-group list-group-horizontal-lg list-group-horizontal-md">
+            <a href="//php.net" class="list-group-item list-group-item-action p-1 border-0" target="_blank"><i
+                class="bi bi-check-circle-fill me-1"></i>
+              PHP</a>
+            <a href="//codeigniter.com" class="list-group-item list-group-item-action p-1 border-0" target="_blank"><i
+                class="bi bi-check-circle-fill me-1"></i>
               Codeigniter</a>
-            <a href="//getbootstrap.com" class="list-group-item list-group-item-action text-bg-dark border-0"
-              target="_blank"><i class="bi bi-check-circle-fill me-1"></i>Bootstrap</a>
-            <a href="//jquery.com" class="list-group-item list-group-item-action text-bg-dark border-0"
-              target="_blank"><i class="bi bi-check-circle-fill me-1"></i>jQuery</a>
-            <a href="//mikrotik.com" class="list-group-item list-group-item-action text-bg-dark border-0"
-              target="_blank"><i class="bi bi-check-circle-fill me-1"></i>Mikrotik</a>
+            <a href="//getbootstrap.com" class="list-group-item list-group-item-action p-1 border-0" target="_blank"><i
+                class="bi bi-check-circle-fill me-1"></i>Bootstrap</a>
+            <a href="//jquery.com" class="list-group-item list-group-item-action p-1 border-0" target="_blank"><i
+                class="bi bi-check-circle-fill me-1"></i>jQuery</a>
+            <a href="//mikrotik.com" class="list-group-item list-group-item-action p-1 border-0" target="_blank"><i
+                class="bi bi-check-circle-fill me-1"></i>Mikrotik</a>
           </div>
         </div>
         <div class="tab-pane fade" role="tabpanel" id="project">
@@ -254,9 +238,8 @@
                   <h5 class="card-title">eMIPS-PPDB</h5>
                   <p class="small">Sistem pendaftaran Peserta Didik</p>
                   <div class="d-grid">
-                    <a type="button" class="btn btn-sm btn-outline-success disabled">Demo <sup>*)</sup></a>
+                    <a type="button" class="btn btn-sm btn-outline-success disabled">Demo</a>
                   </div>
-                  <small class="text-white-50">*) Coming Soon</small>
                 </div>
               </div>
             </div>
